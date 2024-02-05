@@ -13,6 +13,7 @@ Noise:
 ## 2024.02.05. Julich smaples, Nth measurement - Matteo
 
 ### MT1
+- Card Offset : -0.045904 Mv, Agilent Offset : 0.13 mV
 - the plan is to search for contact on a 20 and 100 sample ({\mu }m)
 - Just found out that the norma setup's cable is sending the same voltage after the measurement has stopped.c
 - Couldn't contact 20, L08p100 is successfully contacted. 460 resistance, (sweep 0.5V, 0.1s Min: -8*e-4 A, Max: 1e-3 A)
