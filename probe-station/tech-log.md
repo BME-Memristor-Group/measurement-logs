@@ -27,6 +27,7 @@ Noise:
 - Starting with IV, base was LRS state. measured is -4e-6 A. RESETing device.
 - When formatting, I need to watch out to change the amplifier. Failed the first reset, second was good. Failed the amplifier constant change in the measurement program. Doing HRS again. Switching was good. Recreating the measurement file for noise, because we change from 0-1v-0-(-1v)-0 to 0-500mV-0-(-500mV)-0 . I forget to change filter when doing IV.
 - The sample again moved from 2e-6A to 3e-6A while doing measurement, even though We lowered to 500mV.
+- Went off for two hours. The HRS is -3e-6 A, while the LRS is -6e-6 A. Zoltan created a switch for the easy change of the amplifier's state, and it sent the amplifier to overload. Now it makes sense why the other sample went off a couple days ago. Changed it, and now the Non-Conducting state is actually grounded. After the overload I measured a change in the LRS, HRS that is described above. 
 
 
 
