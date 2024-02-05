@@ -9,3 +9,16 @@ Noise:
 - Start measuring with an IV. Noise, IV, SET, IV Noise, IV RESET.
 - IV is looking good. Start Noise. Restart because didnt switched the capacitor. the first HRS iv's bottom is around -2e-6 A, and the LRS is around -4e-6 A at 1 V. The HRS after the noise is slightly higher at -3e-6 A. Noise on LRS. Restart because didnt switched the capacitor.
 - From the evaluatioin we see that 1V is making the sample switch. Next time will measre with fix LCA.
+
+## 2024.02.05. Julich smaples, Nth measurement - Matteo
+
+### MT1
+- the plan is to search for contact on a 20 and 100 sample ({\mu }m)
+- Just found out that the norma setup's cable is sending the same voltage after the measurement has stopped.c
+- Couldn't contact 20, L08p100 is successfully contacted. 460 resistance, (sweep 0.5V, 0.1s Min: -8*e-4 A, Max: 1e-3 A)
+- base measurement(5 sweep) is looking stable
+- switching on pos 0.5V (RESET), HRS state is -3.5e-5 A Min (0.5V, 0.1s) IV_26
+- probably killed the sample with -1.5V. Go to L09p100. Contact success. IV37. Base 5 looking stable, -1.5e-5 A on 0.5V sweep, RESET on 1.5V pos, -2.5e-5 A on min, stable
+- SET on -2V. 
+- after some steps it went out from e-5 A to e-6 A. IV68
+
