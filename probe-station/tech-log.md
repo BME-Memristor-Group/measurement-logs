@@ -29,7 +29,12 @@ Noise:
 - The sample again moved from 2e-6A to 3e-6A while doing measurement, even though We lowered to 500mV.
 - Went off for two hours. The HRS is -3e-6 A, while the LRS is -6e-6 A. Zoltan created a switch for the easy change of the amplifier's state, and it sent the amplifier to overload. Now it makes sense why the other sample went off a couple days ago. Changed it, and now the Non-Conducting state is actually grounded. After the overload I measured a change in the LRS, HRS that is described above. 
 
+## 2024.02.06. Julich smaples, Nth measurement - Matteo
 
+### MT1
+- card -0.0967912 mV, agilent is esentially 0.
+- did a measurement with open cab, and lights on. Had some very strange noise measurements. HRS is around 4e-6A, LRS is around 8e-6 A. After noise HRS/LRS moved to 3e-6, 4e-6 A. Moving to another 50 sample. L10p50.
+- L10p50 LRS state is 4e-6 A, HRS is 2e-6 A. Ratio is around 2., did the hrs and lrs noise measurement. The eval comparing to the others is left.
 
 
 
