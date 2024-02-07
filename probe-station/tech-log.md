@@ -36,5 +36,12 @@ Noise:
 - did a measurement with open cab, and lights on. Had some very strange noise measurements. HRS is around 4e-6A, LRS is around 8e-6 A. After noise HRS/LRS moved to 3e-6, 4e-6 A. Moving to another 50 sample. L10p50.
 - L10p50 LRS state is 4e-6 A, HRS is 2e-6 A. Ratio is around 2., did the hrs and lrs noise measurement. The eval comparing to the others is left.
 
+## 2024.02.07. Julich smaples, Nth measurement - Matteo
+
+### MT1
+- calib. card : -0.0707422 mV,  agilent offset : -0.0608005 mV
+- Starting to measure K08p50. couldnt contact. Going back to it after consulting with Zoltan, had the contact and starting measuring it. LRS, HRS is 2e-6A, 4e-6 A, the same around 2 ratio like the previouses.
+- Done fitting for all the prev measurements.
 
 
+--- L10p50ser01 fitting is bad really, need to check it with Zoli.
