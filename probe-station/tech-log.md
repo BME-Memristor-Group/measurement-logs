@@ -1,5 +1,112 @@
 # Probe Station Logs
 
+---------------------------------------------
+
+## 2024.02.07. Julich smaples, Nth measurement - Matteo
+
+### MT1
+- calib. card : -0.0707422 mV,  agilent offset : -0.0608005 mV
+- Starting to measure K08p50. couldnt contact. Going back to it after consulting with Zoltan, had the contact and starting measuring it. LRS, HRS is 2e-6A, 4e-6 A, the same around 2 ratio like the previouses.
+- Done fitting for all the prev measurements.
+
+
+--- L10p50ser01 fitting is bad really, need to check it with Zoli.
+
+## 2024.02.06. Julich smaples, Nth measurement - Matteo
+
+### MT1
+- card -0.0967912 mV, agilent is esentially 0.
+- did a measurement with open cab, and lights on. Had some very strange noise measurements. HRS is around 4e-6A, LRS is around 8e-6 A. After noise HRS/LRS moved to 3e-6, 4e-6 A. Moving to another 50 sample. L10p50.
+- L10p50 LRS state is 4e-6 A, HRS is 2e-6 A. Ratio is around 2., did the hrs and lrs noise measurement. The eval comparing to the others is left.
+
+## 2024.02.05. Julich smaples, Nth measurement - Matteo
+
+### MT1
+- Card Offset : -0.045904 Mv, Agilent Offset : 0.13 mV
+- the plan is to search for contact on a 20 and 100 sample ({\mu }m)
+- Just found out that the norma setup's cable is sending the same voltage after the measurement has stopped.c
+- Couldn't contact 20, L08p100 is successfully contacted. 460 resistance, (sweep 0.5V, 0.1s Min: -8*e-4 A, Max: 1e-3 A)
+- base measurement(5 sweep) is looking stable
+- switching on pos 0.5V (RESET), HRS state is -3.5e-5 A Min (0.5V, 0.1s) IV_26
+- probably killed the sample with -1.5V. Go to L09p100. Contact success. IV37. Base 5 looking stable, -1.5e-5 A on 0.5V sweep, RESET on 1.5V pos, -2.5e-5 A on min, stable
+- SET on -2V. 
+- after some steps it went out from e-5 A to e-6 A. IV68 Going to a "known" 50 {\mu}m. L09p50 conduct success IV79
+- +3V is RESET, -3V is SET, 1s, Base state is SET which is HRS. HRS is -2.25e-6 A - -2.7e-6 A min. LRS is -4e-6 A - (-5e-6 A). The HRS/LRS is around 2. Both state look stable.
+- Setting up the noise measurement. The agilent has a lower step of 0.5 mV, and a 0.10-0.15mV minimum agilent error. It's okay if you measure it back.
+- Starting with IV, base was LRS state. measured is -4e-6 A. RESETing device.
+- When formatting, I need to watch out to change the amplifier. Failed the first reset, second was good. Failed the amplifier constant change in the measurement program. Doing HRS again. Switching was good. Recreating the measurement file for noise, because we change from 0-1v-0-(-1v)-0 to 0-500mV-0-(-500mV)-0 . I forget to change filter when doing IV.
+- The sample again moved from 2e-6A to 3e-6A while doing measurement, even though We lowered to 500mV.
+- Went off for two hours. The HRS is -3e-6 A, while the LRS is -6e-6 A. Zoltan created a switch for the easy change of the amplifier's state, and it sent the amplifier to overload. Now it makes sense why the other sample went off a couple days ago. Changed it, and now the Non-Conducting state is actually grounded. After the overload I measured a change in the LRS, HRS that is described above. 
+
+## 2024.02.01. Julich smaples, third measurement - Matteo, Zoli
+
+### Recreate the measurement made yesterday.
+- IV_Block 5 looking stable, higher current amplifier makes less noise on the stable measurements., IV6 is with higher 1e6 current amplifier. 
+Noise:
+- Card offset -0.090654 mV , Agilent offset:0.269617 mV
+- Start measuring with an IV. Noise, IV, SET, IV Noise, IV RESET.
+- IV is looking good. Start Noise. Restart because didnt switched the capacitor. the first HRS iv's bottom is around -2e-6 A, and the LRS is around -4e-6 A at 1 V. The HRS after the noise is slightly higher at -3e-6 A. Noise on LRS. Restart because didnt switched the capacitor.
+- From the evaluatioin we see that 1V is making the sample switch. Next time will measre with fix LCA.
+
+
+
+## 2024.01.31. PCMO samples from Julich, second measurement
+Start with MT1, test IV.
+### L06p50:
+### IV:
+Test IV is good on 0.5 V.
+Cannot switch, at -3V the resistance is good according to the reference measurement, at +3V it’s half of it. 
+Characteristics is similar on the IV to the reference measurement. Top electrode is the ground (4), bias is the bottom electrode. Positive voltage RESET, Negative is SET (3V, 1s). HRS/LRS is around 2.5. Similar to the ref. measurement. Starting from (IV_35) in HRS. IV_36 SET, IV_39 RESET, others are stability measurements. States (HRS/LRS) are looking stable on low bias measurements (0.1s, 1V, 5 times). 
+Switching to noise measurement. 
+### Noise:
+Measure offsets. Card offset: -0.0901297 mV, Agilent offset:0.419638 mV
+Good noise, overload when SET state. After changing overload, we measured no contact. Anomaly accoured, no contact on the sample, anomaly in the measurement setup also, last measurement was good when measuring back the measurement setup.
+TBC. 5hr passed.
+Continuing measurement on MT1L06p50. Anomaly solved by experiencing that the chairs in the new lab are charging us. The sample died in ESD.
+Moving to L07p50.
+We made the following procedure. While always wearing the blue hand band. With the noise setup we did the following. 
+IV, Noise, IV, SET, IV Noise, IV, RESET, IV
+We used the IVs to see that we are on the right switch .( referencing the normal conducting setup).
+The noise on the L07p50 had a small 50Hz due to our system, we didnt experienced that in the L06p50 previously today. When changing IV and Noise, we need to change the capacitor also.
+
+
+## 2024.01.24. Első mérés az új PCMO mintákon
+Chipek elnevezése MT1; MT1p5; MT2, rendre 1nm, 1.5nm és 2nm vastagságú rétegeket jelölik
+Measuring MT1p5.
+### H06p100
+### IV:
+Nagy kezdeti ellenállás, ez megfelel a várakozásoknak. Mérhető IV görbék (IV_69,70). Megpróbálunk még az érintetlen állapoton zajt mérni.
+A zajmérés után megpróbáltuk a kapcsolást, felső tű a + elektróda, az oldalához nyomott tű a föld (-). Ebben az elrendezésben azt tapasztaltuk, hogy pozitív irányban kapcsol be, negatív irányban pedig ki. 2.5-3.5V amplitúdóknál látszott kapcsoló jelleg, de nem volt túl nagy az ON/OFF arány. Kb 2-es faktor lehetett és nem volt szimmetrikus OFF-ON irányba nagyobbat kapcsolt. A rendszer viszont kevésbé tűnt volatile-nak.
+Sajnos elfogyott az idő, így itt befejeztük, de ígéretesnek tűnik.
+### Zaj:
+Offset kompenzálás még az előző mintán történt, ezt használjuk. Card_offset=-0.0727059mV, Agilent_offset=0.57777mV.
+Cél sima hosszú platós zaj 100-200-500-1000mV fel-le +- irányba nagy szűrővel (20s görbék).
+Első zajmérés (ser01) sikeres, de nagyon nagy volt az 50Hz., ezért nem értékeltük ki. A problémát a probe station elmozgatása megoldotta és a második (ser02) mérésnél nagyon szép lett az alapzaj, kb 50Hz mentes. Ezt kiértékeltük, kicsi volt a zaj, de mérhető. A 100-200mV-os görbéket nem fitteltük, mert közel voltak az alapzajhoz, 500-1000mV került mentésre. Ezek ígéretes eredményt adtak, a zaj kisebbnek tűnik, mint a régi PCMO-nál.
+
+## 2024.01.24. Mérés Matteoval betanítás céljából Régi PCMO-n
+### D06p100
+Van mérhető ellenállás, de elég kicsi, 25Ohm. Megpróbáljuk az inicializálást, de túl kicsi az ellenállás, telítésbe viszi az erősítőt 1e3-ban is, így inkább másik mintára megyünk át.
+Megj.: elképzelhető, hogy meg lett terrorizálva a tűvel
+### C07p100
+Szintén kicsi ellenállás ~36Ohm, inkább másikat keresünk. Közben láttuk meg, hogy ez már pirossal van jelölve
+### E06p100
+Ennek is ~35Ohm az ellenállása, ez sem annyira ígéretes, de azért megpróbálok kiadni egy 2.5V IV-t. Nem sikerül, másik minta jön.
+### G07p100
+Túl kicsi ellenállás
+### F07p50
+Túl kicsi ellenállás
+### E06p50
+kezdeti ellenállás 65 Ohm, init test
+Init sikerült , 2.5V 1s beállítással (IV_12)
+Telítésbe ment 0.1 mp-n, viszont 1 s-en sikerült.. Ellenállás 500mV-nál 2.5MOhm
+### IV:
+Kapcsolás próba 0.01s hosszú -3/2.2V jellel (IV_25). 1e6-ban telítésbe megy, így levesszük 1e5-be. Még mindig telítésbe megy a negatív oldalon (IV_26). Mutat valamennyi kapcsolást, stabilnak is túnik. 5 görbés IV (IV_28). LEvettük a negatív amplitúdót 2.7V-ra, így már nincs telítés (IV_29). Szép görbék. Stabilnak tűnik 5 görbe egymás után (IV_33). Az IV görbéken látszik némi kapcsolás/hiszterézis, de kis feszültségnél nem válnak szét, illetve nem tűnik igazi kapcsolásnak (steady state ellenállás mintha nem változna).
+### Zaj:
+Sajnos nem sikerült, mert közben meghalt (kis ellenállásba ment) a minta
+
+
+-------------------------------------
+# Old
 2022.10.07. Teszt zajmérések 1MOhm-mal a probe stationben
 Áthoztam a zajmérő setuphoz a Botilaborba a probe station. Boti (nagyfrekis setuphoz készített) régi nyákjára  forrasztottam rá egy SMD 1 MOhm ellenállást, aminek egyik vége kontaktálva van SMA-csatlakozóhoz, és a másik végét kell tűvel kikontaktálni. 
 Offsetelést elhanyagoltam.
@@ -457,106 +564,3 @@ ser04 - zajmérés után 20 IV, FIGYELEM, ITT VETTEM ÉSZRE, HOGY VALAMIKOR 1e6-
 /noise:
 ser02 - zajmérés, kezdésként egy ellenőrzés “check”’ néven, ezen egy elég nagy lorentz jelent meg, de sebaj. Jöhet a rendes mérés. Értelmes PSD-k jöttek, persze tele van Lorentzel, de legalább ment a mérés
 ser03 - kiértékelés alatt újabb zajmérés, ez is működött
-
----------------------------------------------
-
-
-2024.01.24. Mérés Matteoval betanítás céljából Régi PCMO-n
-D06p100
-Van mérhető ellenállás, de elég kicsi, 25Ohm. Megpróbáljuk az inicializálást, de túl kicsi az ellenállás, telítésbe viszi az erősítőt 1e3-ban is, így inkább másik mintára megyünk át.
-Megj.: elképzelhető, hogy meg lett terrorizálva a tűvel
-C07p100
-Szintén kicsi ellenállás ~36Ohm, inkább másikat keresünk. Közben láttuk meg, hogy ez már pirossal van jelölve
-E06p100
-Ennek is ~35Ohm az ellenállása, ez sem annyira ígéretes, de azért megpróbálok kiadni egy 2.5V IV-t. Nem sikerül, másik minta jön.
-G07p100
-Túl kicsi ellenállás
-F07p50
-Túl kicsi ellenállás
-E06p50
-kezdeti ellenállás 65 Ohm, init test
-Init sikerült , 2.5V 1s beállítással (IV_12)
-Telítésbe ment 0.1 mp-n, viszont 1 s-en sikerült.. Ellenállás 500mV-nál 2.5MOhm
-IV:
-Kapcsolás próba 0.01s hosszú -3/2.2V jellel (IV_25). 1e6-ban telítésbe megy, így levesszük 1e5-be. Még mindig telítésbe megy a negatív oldalon (IV_26). Mutat valamennyi kapcsolást, stabilnak is túnik. 5 görbés IV (IV_28). LEvettük a negatív amplitúdót 2.7V-ra, így már nincs telítés (IV_29). Szép görbék. Stabilnak tűnik 5 görbe egymás után (IV_33). Az IV görbéken látszik némi kapcsolás/hiszterézis, de kis feszültségnél nem válnak szét, illetve nem tűnik igazi kapcsolásnak (steady state ellenállás mintha nem változna).
-Zaj:
-Sajnos nem sikerült, mert közben meghalt (kis ellenállásba ment) a minta
-
-
-
-## 2024.01.24. Első mérés az új PCMO mintákon
-Chipek elnevezése MT1; MT1p5; MT2, rendre 1nm, 1.5nm és 2nm vastagságú rétegeket jelölik
-Measuring MT1p5.
-### H06p100
-### IV:
-Nagy kezdeti ellenállás, ez megfelel a várakozásoknak. Mérhető IV görbék (IV_69,70). Megpróbálunk még az érintetlen állapoton zajt mérni.
-A zajmérés után megpróbáltuk a kapcsolást, felső tű a + elektróda, az oldalához nyomott tű a föld (-). Ebben az elrendezésben azt tapasztaltuk, hogy pozitív irányban kapcsol be, negatív irányban pedig ki. 2.5-3.5V amplitúdóknál látszott kapcsoló jelleg, de nem volt túl nagy az ON/OFF arány. Kb 2-es faktor lehetett és nem volt szimmetrikus OFF-ON irányba nagyobbat kapcsolt. A rendszer viszont kevésbé tűnt volatile-nak.
-Sajnos elfogyott az idő, így itt befejeztük, de ígéretesnek tűnik.
-### Zaj:
-Offset kompenzálás még az előző mintán történt, ezt használjuk. Card_offset=-0.0727059mV, Agilent_offset=0.57777mV.
-Cél sima hosszú platós zaj 100-200-500-1000mV fel-le +- irányba nagy szűrővel (20s görbék).
-Első zajmérés (ser01) sikeres, de nagyon nagy volt az 50Hz., ezért nem értékeltük ki. A problémát a probe station elmozgatása megoldotta és a második (ser02) mérésnél nagyon szép lett az alapzaj, kb 50Hz mentes. Ezt kiértékeltük, kicsi volt a zaj, de mérhető. A 100-200mV-os görbéket nem fitteltük, mert közel voltak az alapzajhoz, 500-1000mV került mentésre. Ezek ígéretes eredményt adtak, a zaj kisebbnek tűnik, mint a régi PCMO-nál.
-## 2024.01.31. PCMO samples from Julich, second measurement
-Start with MT1, test IV.
-### L06p50:
-### IV:
-Test IV is good on 0.5 V.
-Cannot switch, at -3V the resistance is good according to the reference measurement, at +3V it’s half of it. 
-Characteristics is similar on the IV to the reference measurement. Top electrode is the ground (4), bias is the bottom electrode. Positive voltage RESET, Negative is SET (3V, 1s). HRS/LRS is around 2.5. Similar to the ref. measurement. Starting from (IV_35) in HRS. IV_36 SET, IV_39 RESET, others are stability measurements. States (HRS/LRS) are looking stable on low bias measurements (0.1s, 1V, 5 times). 
-Switching to noise measurement. 
-### Noise:
-Measure offsets. Card offset: -0.0901297 mV, Agilent offset:0.419638 mV
-Good noise, overload when SET state. After changing overload, we measured no contact. Anomaly accoured, no contact on the sample, anomaly in the measurement setup also, last measurement was good when measuring back the measurement setup.
-TBC. 5hr passed.
-Continuing measurement on MT1L06p50. Anomaly solved by experiencing that the chairs in the new lab are charging us. The sample died in ESD.
-Moving to L07p50.
-We made the following procedure. While always wearing the blue hand band. With the noise setup we did the following. 
-IV, Noise, IV, SET, IV Noise, IV, RESET, IV
-We used the IVs to see that we are on the right switch .( referencing the normal conducting setup).
-The noise on the L07p50 had a small 50Hz due to our system, we didnt experienced that in the L06p50 previously today. When changing IV and Noise, we need to change the capacitor also.
-
-## 2024.02.01. Julich smaples, third measurement - Matteo, Zoli
-
-### Recreate the measurement made yesterday.
-- IV_Block 5 looking stable, higher current amplifier makes less noise on the stable measurements., IV6 is with higher 1e6 current amplifier. 
-Noise:
-- Card offset -0.090654 mV , Agilent offset:0.269617 mV
-- Start measuring with an IV. Noise, IV, SET, IV Noise, IV RESET.
-- IV is looking good. Start Noise. Restart because didnt switched the capacitor. the first HRS iv's bottom is around -2e-6 A, and the LRS is around -4e-6 A at 1 V. The HRS after the noise is slightly higher at -3e-6 A. Noise on LRS. Restart because didnt switched the capacitor.
-- From the evaluatioin we see that 1V is making the sample switch. Next time will measre with fix LCA.
-
-## 2024.02.05. Julich smaples, Nth measurement - Matteo
-
-### MT1
-- Card Offset : -0.045904 Mv, Agilent Offset : 0.13 mV
-- the plan is to search for contact on a 20 and 100 sample ({\mu }m)
-- Just found out that the norma setup's cable is sending the same voltage after the measurement has stopped.c
-- Couldn't contact 20, L08p100 is successfully contacted. 460 resistance, (sweep 0.5V, 0.1s Min: -8*e-4 A, Max: 1e-3 A)
-- base measurement(5 sweep) is looking stable
-- switching on pos 0.5V (RESET), HRS state is -3.5e-5 A Min (0.5V, 0.1s) IV_26
-- probably killed the sample with -1.5V. Go to L09p100. Contact success. IV37. Base 5 looking stable, -1.5e-5 A on 0.5V sweep, RESET on 1.5V pos, -2.5e-5 A on min, stable
-- SET on -2V. 
-- after some steps it went out from e-5 A to e-6 A. IV68 Going to a "known" 50 {\mu}m. L09p50 conduct success IV79
-- +3V is RESET, -3V is SET, 1s, Base state is SET which is HRS. HRS is -2.25e-6 A - -2.7e-6 A min. LRS is -4e-6 A - (-5e-6 A). The HRS/LRS is around 2. Both state look stable.
-- Setting up the noise measurement. The agilent has a lower step of 0.5 mV, and a 0.10-0.15mV minimum agilent error. It's okay if you measure it back.
-- Starting with IV, base was LRS state. measured is -4e-6 A. RESETing device.
-- When formatting, I need to watch out to change the amplifier. Failed the first reset, second was good. Failed the amplifier constant change in the measurement program. Doing HRS again. Switching was good. Recreating the measurement file for noise, because we change from 0-1v-0-(-1v)-0 to 0-500mV-0-(-500mV)-0 . I forget to change filter when doing IV.
-- The sample again moved from 2e-6A to 3e-6A while doing measurement, even though We lowered to 500mV.
-- Went off for two hours. The HRS is -3e-6 A, while the LRS is -6e-6 A. Zoltan created a switch for the easy change of the amplifier's state, and it sent the amplifier to overload. Now it makes sense why the other sample went off a couple days ago. Changed it, and now the Non-Conducting state is actually grounded. After the overload I measured a change in the LRS, HRS that is described above. 
-
-## 2024.02.06. Julich smaples, Nth measurement - Matteo
-
-### MT1
-- card -0.0967912 mV, agilent is esentially 0.
-- did a measurement with open cab, and lights on. Had some very strange noise measurements. HRS is around 4e-6A, LRS is around 8e-6 A. After noise HRS/LRS moved to 3e-6, 4e-6 A. Moving to another 50 sample. L10p50.
-- L10p50 LRS state is 4e-6 A, HRS is 2e-6 A. Ratio is around 2., did the hrs and lrs noise measurement. The eval comparing to the others is left.
-
-## 2024.02.07. Julich smaples, Nth measurement - Matteo
-
-### MT1
-- calib. card : -0.0707422 mV,  agilent offset : -0.0608005 mV
-- Starting to measure K08p50. couldnt contact. Going back to it after consulting with Zoltan, had the contact and starting measuring it. LRS, HRS is 2e-6A, 4e-6 A, the same around 2 ratio like the previouses.
-- Done fitting for all the prev measurements.
-
-
---- L10p50ser01 fitting is bad really, need to check it with Zoli.
