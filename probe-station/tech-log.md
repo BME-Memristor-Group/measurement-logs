@@ -83,6 +83,11 @@ Offset kompenzálás még az előző mintán történt, ezt használjuk. Card_of
 Cél sima hosszú platós zaj 100-200-500-1000mV fel-le +- irányba nagy szűrővel (20s görbék).
 Első zajmérés (ser01) sikeres, de nagyon nagy volt az 50Hz., ezért nem értékeltük ki. A problémát a probe station elmozgatása megoldotta és a második (ser02) mérésnél nagyon szép lett az alapzaj, kb 50Hz mentes. Ezt kiértékeltük, kicsi volt a zaj, de mérhető. A 100-200mV-os görbéket nem fitteltük, mert közel voltak az alapzajhoz, 500-1000mV került mentésre. Ezek ígéretes eredményt adtak, a zaj kisebbnek tűnik, mint a régi PCMO-nál.
 
+
+-------------------------------------
+# Old
+
+
 ## 2024.01.24. Mérés Matteoval betanítás céljából Régi PCMO-n
 ### D06p100
 Van mérhető ellenállás, de elég kicsi, 25Ohm. Megpróbáljuk az inicializálást, de túl kicsi az ellenállás, telítésbe viszi az erősítőt 1e3-ban is, így inkább másik mintára megyünk át.
@@ -104,9 +109,6 @@ Kapcsolás próba 0.01s hosszú -3/2.2V jellel (IV_25). 1e6-ban telítésbe megy
 ### Zaj:
 Sajnos nem sikerült, mert közben meghalt (kis ellenállásba ment) a minta
 
-
--------------------------------------
-# Old
 2022.10.07. Teszt zajmérések 1MOhm-mal a probe stationben
 Áthoztam a zajmérő setuphoz a Botilaborba a probe station. Boti (nagyfrekis setuphoz készített) régi nyákjára  forrasztottam rá egy SMD 1 MOhm ellenállást, aminek egyik vége kontaktálva van SMA-csatlakozóhoz, és a másik végét kell tűvel kikontaktálni. 
 Offsetelést elhanyagoltam.
