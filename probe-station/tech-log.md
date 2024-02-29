@@ -2,6 +2,14 @@
 
 ---------------------------------------------
 
+## 2024.02.29. Julich samples, Nth measurement - Matteo
+### MT1
+- Test IV on 100s. 
+### K08p100.
+- IV_02 successfull contacting. LRS = -8E-9, HRS = -4E-9, On/Off Ratio = rouhgly 2, Switching voltage = +-3V, 1s. Stable. Stability check from IV19-23.
+- Switching to noise setup.
+
+
 ## 2024.02.07. Julich samples, Nth measurement - Matteo
 
 ### MT1
