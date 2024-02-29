@@ -8,6 +8,12 @@
 ### K08p100.
 - IV_02 successfull contacting. LRS = -8E-9, HRS = -4E-9, On/Off Ratio = rouhgly 2, Switching voltage = +-3V, 1s. Stable. Stability check from IV19-23.
 - Switching to noise setup.
+### Noise
+- Card offset : -0.117204 mV, Agilent offset : -0.248276 mV,
+- Starting in HRS state (ser01). The first HRS in (ser01) is without the +-500mV in the end. The second is longer and contains it.
+- Switching to LRS. Couldnt set it with -3V. Switching to IV setup.
+- After some measurements the LRS/HRS switched to  LRS = -20E-6, HRS = -8E-6. The (ser02)'s measurements are unknown whether they are LRS or HRS.
+- The first (ser01) measurement was in 1e6 gain, and it went to overload, which made the position weird on the map. 
 
 
 ## 2024.02.07. Julich samples, Nth measurement - Matteo
@@ -95,7 +101,9 @@ Measuring MT1p5.
 ### H06p100
 ### IV:
 Nagy kezdeti ellenállás, ez megfelel a várakozásoknak. Mérhető IV görbék (IV_69,70). Megpróbálunk még az érintetlen állapoton zajt mérni.
-A zajmérés után megpróbáltuk a kapcsolást, felső tű a + elektróda, az oldalához nyomott tű a föld (-). Ebben az elrendezésben azt tapasztaltuk, hogy pozitív irányban kapcsol be, negatív irányban pedig ki. 2.5-3.5V amplitúdóknál látszott kapcsoló jelleg, de nem volt túl nagy az ON/OFF arány. Kb 2-es faktor lehetett és nem volt szimmetrikus OFF-ON irányba nagyobbat kapcsolt. A rendszer viszont kevésbé tűnt volatile-nak.
+A zajmérés után megpróbáltuk a kapcsolást, felső tű a + elektróda, az oldalához nyomott tű a föld (-). 
+!!!!Igaz de fordított, mint az utánna valók!!!
+ Ebben az elrendezésben azt tapasztaltuk, hogy pozitív irányban kapcsol be, negatív irányban pedig ki. 2.5-3.5V amplitúdóknál látszott kapcsoló jelleg, de nem volt túl nagy az ON/OFF arány. Kb 2-es faktor lehetett és nem volt szimmetrikus OFF-ON irányba nagyobbat kapcsolt. A rendszer viszont kevésbé tűnt volatile-nak.
 Sajnos elfogyott az idő, így itt befejeztük, de ígéretesnek tűnik.
 ### Zaj:
 Offset kompenzálás még az előző mintán történt, ezt használjuk. Card_offset=-0.0727059mV, Agilent_offset=0.57777mV.
