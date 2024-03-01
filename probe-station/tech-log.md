@@ -1,6 +1,38 @@
 # Probe Station Logs
 
 ---------------------------------------------
+## 2024.03.01. Julich samples, Nth measurement - Matteo
+### MT1 K09p100
+### IV
+- Success conduct. (IV4). Stability in HRS IV18. IV 16-17 RESET-ing. After measuring it with neg voltage many times, the Normal measurements(1V, 1s, full) bottom left (2.5e-5 A) has rised to a more stable state. LRS is -2.5e-5 A. Hrs's lowest state is (what i could achieve) -8e-6 A. Full cycle is stable, starting the noise in LRS. The on off ratio is roughy 2-2.5-3. IV27-33.
+### Noise
+- Setup Card offset: -0.097008 mV, Agilent offset: -0.143239 mV
+- LRS was stable in the device (ser01) after resetting I lost contact, tried to move the contacts 3 times, no result.
+
+### MT1 J08p100
+### IV
+- Success conduct. (IV4). Stability in HRS IV18. IV 16-17 RESET-ing. After measuring it with neg voltage many times, the Normal measurements(1V, 1s, full) bottom left (2.5e-5 A) has rised to a more stable state. LRS is -2.5e-5 A. Hrs's lowest state is (what i could achieve) -8e-6 A. Full cycle is stable, starting the noise in LRS. The on off ratio is roughy 2-2.5-3. IV27-33.
+### Noise
+- HRS noise in (ser01,ser03). LRS noise in (ser02,ser04). I think that the connection between the gain and the probe station was the leaky, and didnt after changed it to a normal bnc cable, it worked.
+
+### MT1 J08p50
+### IV
+- Success conduct. (IV111). HRS/LRS -2.5e-6, -4e-6 (A). on off roughly 2.
+ 
+### Noise
+-  LRS noise in (ser01). HRS noise in (ser01,ser03). 
+
+### MT1 K09p20
+### IV
+- LRS -8e-7 A,  HRS = -4 e-7 A., on/off is roughly 2.
+### Noise
+- Start in LRS (ser01).
+
+### MT1 J08p100
+### IV
+- LRS -1.8e-5 A,  HRS = -8 e-6 A., on/off is roughly 2. IV104 stab in HRS. SET 105, Stab in LRS 106, RESET 107
+### Noise
+- Start in LRS (ser01).
 
 ## 2024.02.29. Julich samples, Nth measurement - Matteo
 ### MT1
