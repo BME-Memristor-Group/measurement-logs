@@ -9,6 +9,12 @@
 - Setup Card offset: -0.097008 mV, Agilent offset: -0.143239 mV
 - LRS was stable in the device (ser01) after resetting I lost contact, tried to move the contacts 3 times, no result.
 
+### MT1 K09p20
+#### IV
+- LRS -8e-7 A,  HRS = -4 e-7 A., on/off is roughly 2.
+#### Noise
+- Start in LRS (ser01). Died after LRS.
+
 ### MT1 J08p100
 
 #### IV
@@ -17,29 +23,23 @@
 - HRS noise in (ser01,ser03). LRS noise in (ser02,ser04). I think that the connection between the gain and the probe station was the leaky, and didnt after changed it to a normal bnc cable, it worked.
 
 ### MT1 J08p50
-####### IV
+#### IV
 - Success conduct. (IV111). HRS/LRS -2.5e-6, -4e-6 (A). on off roughly 2.
 
 #### Noise
--  LRS noise in (ser01). HRS noise in (ser01,ser03). 
-
-### MT1 K09p20
-#### IV
-- LRS -8e-7 A,  HRS = -4 e-7 A., on/off is roughly 2.
-#### Noise
-- Start in LRS (ser01). Died after LRS.
-
-### MT1 J08p100
-#### IV
-- LRS -1.8e-5 A,  HRS = -8 e-6 A., on/off is roughly 2. IV104 stab in HRS. SET 105, Stab in LRS 106, RESET 107
-#### Noise
-- Start in LRS (ser01). HRS noise in (ser02).
+-  LRS noise in (ser01). HRS noise in (ser02). 
 
 ### MT1 K09p50
 #### IV
 - LRS -4e-6 A,  HRS = -2 e-6 A., on/off is roughly 2. Stab in 128. RESET 129, stab in HRS 130, SET 131, stab in LRS 132
 #### Noise
-- Start in LRS (ser01).
+- Start in LRS (ser01). Next in HRS (ser02), the filter wasn't turned on
+
+### MT1 J09p20
+#### IV
+- First I catched the p50 sample, but then I could catch the p20. The switching was nice and stable, I_LRS(@-1V)=-1e6, I_HRS(@-1V)=-2e7.
+#### Noise
+- Start in LRS (ser01). The noise seems very low :( I fitted the PDSs, but they are rather theoretical fits, because I used only the few first points. After ser01 I made 2-3 full cycle and a reset. They were nice and then I started a noise measurement in HRS with higher gain (1e7). The noise was measurable and I could fit the PSDs. I switched back to LRS, the IVs are nice. I tried a new noise measurement (ser03) with the LCA amplifier. I didn't make a proper offset compensation, but checked it and the offset wasn't bad. The noise was higher than before, it is closer to the trend, but still below it.
 
 ## 2024.02.29. Julich samples, Nth measurement - Matteo
 ### MT1
