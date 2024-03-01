@@ -3,35 +3,42 @@
 ---------------------------------------------
 ## 2024.03.01. Julich samples, Nth measurement - Matteo
 ### MT1 K09p100
-### IV
+#### IV
 - Success conduct. (IV4). Stability in HRS IV18. IV 16-17 RESET-ing. After measuring it with neg voltage many times, the Normal measurements(1V, 1s, full) bottom left (2.5e-5 A) has rised to a more stable state. LRS is -2.5e-5 A. Hrs's lowest state is (what i could achieve) -8e-6 A. Full cycle is stable, starting the noise in LRS. The on off ratio is roughy 2-2.5-3. IV27-33.
-### Noise
+#### Noise
 - Setup Card offset: -0.097008 mV, Agilent offset: -0.143239 mV
 - LRS was stable in the device (ser01) after resetting I lost contact, tried to move the contacts 3 times, no result.
 
 ### MT1 J08p100
-### IV
+
+#### IV
 - Success conduct. (IV4). Stability in HRS IV18. IV 16-17 RESET-ing. After measuring it with neg voltage many times, the Normal measurements(1V, 1s, full) bottom left (2.5e-5 A) has rised to a more stable state. LRS is -2.5e-5 A. Hrs's lowest state is (what i could achieve) -8e-6 A. Full cycle is stable, starting the noise in LRS. The on off ratio is roughy 2-2.5-3. IV27-33.
-### Noise
+#### Noise
 - HRS noise in (ser01,ser03). LRS noise in (ser02,ser04). I think that the connection between the gain and the probe station was the leaky, and didnt after changed it to a normal bnc cable, it worked.
 
 ### MT1 J08p50
-### IV
+####### IV
 - Success conduct. (IV111). HRS/LRS -2.5e-6, -4e-6 (A). on off roughly 2.
- 
-### Noise
+
+#### Noise
 -  LRS noise in (ser01). HRS noise in (ser01,ser03). 
 
 ### MT1 K09p20
-### IV
+#### IV
 - LRS -8e-7 A,  HRS = -4 e-7 A., on/off is roughly 2.
-### Noise
-- Start in LRS (ser01).
+#### Noise
+- Start in LRS (ser01). Died after LRS.
 
 ### MT1 J08p100
-### IV
+#### IV
 - LRS -1.8e-5 A,  HRS = -8 e-6 A., on/off is roughly 2. IV104 stab in HRS. SET 105, Stab in LRS 106, RESET 107
-### Noise
+#### Noise
+- Start in LRS (ser01). HRS noise in (ser02).
+
+### MT1 K09p50
+#### IV
+- LRS -4e-6 A,  HRS = -2 e-6 A., on/off is roughly 2. Stab in 128. RESET 129, stab in HRS 130, SET 131, stab in LRS 132
+#### Noise
 - Start in LRS (ser01).
 
 ## 2024.02.29. Julich samples, Nth measurement - Matteo
@@ -40,7 +47,7 @@
 ### K08p100.
 - IV_02 successfull contacting. LRS = -8E-9, HRS = -4E-9, On/Off Ratio = rouhgly 2, Switching voltage = +-3V, 1s. Stable. Stability check from IV19-23.
 - Switching to noise setup.
-### Noise
+#### Noise
 - Card offset : -0.117204 mV, Agilent offset : -0.248276 mV,
 - Starting in HRS state (ser01). The first HRS in (ser01) is without the +-500mV in the end. The second is longer and contains it.
 - Switching to LRS. Couldnt set it with -3V. Switching to IV setup.
@@ -107,19 +114,19 @@ Noise:
 ## 2024.01.31. PCMO samples from Julich, second measurement
 Start with MT1, test IV.
 ### L06p50:
-### IV:
+#### IV:
 Test IV is good on 0.5 V.
 Cannot switch, at -3V the resistance is good according to the reference measurement, at +3V it’s half of it. 
 Characteristics is similar on the IV to the reference measurement. Top electrode is the ground (4), bias is the bottom electrode. Positive voltage RESET, Negative is SET (3V, 1s). HRS/LRS is around 2.5. Similar to the ref. measurement. Starting from (IV_35) in HRS. IV_36 SET, IV_39 RESET, others are stability measurements. States (HRS/LRS) are looking stable on low bias measurements (0.1s, 1V, 5 times). 
 Switching to noise measurement. 
-### Noise:
+#### Noise:
 Measure offsets. Card offset: -0.0901297 mV, Agilent offset:0.419638 mV
 Noise measurement in HRS (ser01), nice noise results. Continous IV measurement with the noise setup, overload when SET state.
 After changing gain, we measured no contact. Anomaly accoured, no contact on the sample, anomaly in the measurement setup also, last measurement was good when measuring back the measurement setup.
 TBC. 5hr passed.
 Continuing measurement on MT1L06p50. Anomaly solved by experiencing that the chairs in the new lab are charging us. The sample died in ESD.
 ### L07p50.
-### Noise
+#### Noise
 We made the following procedure. While always wearing the blue hand band. With the noise setup we did the following. 
 IV, Noise, IV, SET, IV Noise, IV, RESET, IV
 We used the IVs to see that we are on the right switch .( referencing the normal conducting setup).
@@ -131,13 +138,13 @@ First noise measurement in LRS (ser01), then continous IVs (in LRS/HRS and reset
 Chipek elnevezése MT1; MT1p5; MT2, rendre 1nm, 1.5nm és 2nm vastagságú rétegeket jelölik
 Measuring MT1p5.
 ### H06p100
-### IV:
+#### IV:
 Nagy kezdeti ellenállás, ez megfelel a várakozásoknak. Mérhető IV görbék (IV_69,70). Megpróbálunk még az érintetlen állapoton zajt mérni.
 A zajmérés után megpróbáltuk a kapcsolást, felső tű a + elektróda, az oldalához nyomott tű a föld (-). 
 !!!!Igaz de fordított, mint az utánna valók!!!
  Ebben az elrendezésben azt tapasztaltuk, hogy pozitív irányban kapcsol be, negatív irányban pedig ki. 2.5-3.5V amplitúdóknál látszott kapcsoló jelleg, de nem volt túl nagy az ON/OFF arány. Kb 2-es faktor lehetett és nem volt szimmetrikus OFF-ON irányba nagyobbat kapcsolt. A rendszer viszont kevésbé tűnt volatile-nak.
 Sajnos elfogyott az idő, így itt befejeztük, de ígéretesnek tűnik.
-### Zaj:
+#### Zaj:
 Offset kompenzálás még az előző mintán történt, ezt használjuk. Card_offset=-0.0727059mV, Agilent_offset=0.57777mV.
 Cél sima hosszú platós zaj 100-200-500-1000mV fel-le +- irányba nagy szűrővel (20s görbék).
 Első zajmérés (ser01) sikeres, de nagyon nagy volt az 50Hz., ezért nem értékeltük ki. A problémát a probe station elmozgatása megoldotta és a második (ser02) mérésnél nagyon szép lett az alapzaj, kb 50Hz mentes. Ezt kiértékeltük, kicsi volt a zaj, de mérhető. A 100-200mV-os görbéket nem fitteltük, mert közel voltak az alapzajhoz, 500-1000mV került mentésre. Ezek ígéretes eredményt adtak, a zaj kisebbnek tűnik, mint a régi PCMO-nál.
