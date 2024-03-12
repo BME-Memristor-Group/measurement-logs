@@ -4,6 +4,16 @@
 ## 2024.03.12. Julich samples, Nth measurement - Matteo
 
 ### MT1 
+#### Noise 
+- Setup. Card offset : -0.0987745 mV, Agilent 0.258328 mV,
+- Measuring without any switching, default should be HRS.
+- Measured the following chips with zero switching in HRS.
+N03p100, O03p100, P03p100, P03p50, O03p50, N03p50
+All was successful. N03p100 was weird, and the results on P03p100 was also weird. Measured in 1e4 gain all p100, while 1e6 gain all the p50s.
+### MT1 N03p50
+#### Noise 
+- After the zero shot measurement, I made two Full switches and measured noise in LRS twice. The second two Fulls were in 1e4 gain while I set 1e3 in the program.
+
 
 
 ## 2024.03.01. Julich samples, Nth measurement - Matteo
@@ -64,11 +74,9 @@
 
 ### MT1
 - calib. card : -0.0707422 mV,  agilent offset : -0.0608005 mV
-- Starting to measure K08p50. couldnt contact. Going back to it after consulting with Zoltan, had the contact and starting measuring it. LRS, HRS is 2e-6A, 4e-6 A, the same around 2 ratio like the previouses.
-- Done fitting for all the prev measurements.
-
-
---- L10p50ser01 fitting is bad really, need to check it with Zoli.
+### K08p50
+- Starting to measure K08p50. couldnt contact. Going back to it after consulting with Zoltan, had the contact and starting measuring it. LRS, HRS is 2e-6A, 4e-6 A, the same around 2 ratio like the previouses. LRS is in (ser01), HRS is in (ser02).
+- Done fitting for all the prev measurements. L10p50ser01 fitting is bad really, need to check it with Zoli.
 
 ## 2024.02.06. Julich samples, Nth measurement - Matteo
 
