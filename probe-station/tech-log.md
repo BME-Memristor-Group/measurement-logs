@@ -1,6 +1,23 @@
 # Probe Station Logs
 
 ---------------------------------------------
+## 2024.03.14. Julich samples, Nth measurement - Matteo
+
+### MT1 N03p50
+#### IV measurements
+- the plan is to make stabilty measurements on the sample. Starting with around 30-40. FULL IV.
+- IV14 Contact. IV19 stab in LRS. 6e-6 is with 1V, 1s. Probably killed N03p50 with 5V. Switching
+### MT1 P03p50
+#### IV measurements
+- IV 43 contact, Full. Switch stab in IV58, LRS IV59, HRS IV61. -1,5e-6 A is HRS, LRS is -5e-6 A. 30 Full in IV64. Switching to noise
+#### Noise
+- Card : -0.083298 mV, Agilent 0.198055 mV
+- Everything is good. LRS HRS LRS HRS. WEnt expectred
+#### Doing nonlinear measurements
+- IV Setup, test time stability,IV69
+- Wont copntinue nonblinear measurements. Successfull, 1.5V made it switch.
+
+
 ## 2024.03.12. Julich samples, Nth measurement - Matteo
 
 ### MT1 
