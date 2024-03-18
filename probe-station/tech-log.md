@@ -1,6 +1,16 @@
 # Probe Station Logs
 
 ---------------------------------------------
+## 2024.03.18. Julich samples, Nth measurement - Matteo
+
+### MT M03p50
+#### IV
+- IV 15 Stability HRS, IV 18 stab in LRS. IVs in 19.
+#### Noise
+- Card: -0.283573 mV, Agilent : 0.0356573 
+- Did noise with many setup. Tomorrow will do the eval.
+
+
 ## 2024.03.14. Julich samples, Nth measurement - Matteo
 
 ### MT1 N03p50
