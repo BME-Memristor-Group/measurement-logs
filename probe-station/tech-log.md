@@ -1,6 +1,12 @@
 # Probe Station Logs
 
 ---------------------------------------------
+## 2024.03.19. Julich samples, Nth measurement - Matteo
+### MT M03p50
+#### Noise 
+- Card (5e7 gain) : -0.0692141 mV, Agilent : -0.137436 mV, Card (changeable gain): 0.0273034 mV,
+- 
+
 ## 2024.03.18. Julich samples, Nth measurement - Matteo
 
 ### MT M03p50
