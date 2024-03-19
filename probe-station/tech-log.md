@@ -5,7 +5,8 @@
 ### MT M03p50
 #### Noise 
 - Card (5e7 gain) : -0.0692141 mV, Agilent : -0.137436 mV, Card (changeable gain): 0.0273034 mV,
-- 
+- to 500 mV, 1000 mV , 1500 mV with 100 steps(20s, and 2s for the biggers). The condensator of the current gain broke down.
+- We see that the sample is switching on higher currents over time.
 
 ## 2024.03.18. Julich samples, Nth measurement - Matteo
 
