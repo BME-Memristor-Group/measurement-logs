@@ -1,6 +1,15 @@
 # Probe Station Logs
 
 ---------------------------------------------
+## 2024.03.20. Julich samples, Nth measurement - Matteo
+### MT M03p50
+#### Noise 
+- Card: -0.00611255 mV, Agilent: -0.140019 mV,
+- The measurement's purpose was to detect how much the current is drifting if we apply higher and higher currents. 
+- In LRS I see that it drifts at around 600-700 mV. Asthe current is increasing the slope of the average current is also. At highest it's 8.62%. The drifting is the same like in the nonlinear measurements.
+-There is a strange flick at the start of the measurements over 500.
+
+
 ## 2024.03.19. Julich samples, Nth measurement - Matteo
 ### MT M03p50
 #### Noise 
