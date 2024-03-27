@@ -3,8 +3,9 @@
 ---------------------------------------------
 ## 2024.03.27. Julich samples, Nth measurement - Matteo
 ### MT1D08p20
-- Did a topography scan. (day/a.gdf). There is contact.
-
+- Did a topography scan. (day/a.gdf). There is contact in IV3. The signal in stable. IV5 10 1V 1s.Full from IV6-9. IV24 10 3V 1s. On off ratio is around 2. Iv28 10 3V 1s. From the topography we can wee our prevous measurements on the surface, it looks like a crater. 
+### MT1D08p20
+- topology scan. Looks good. Contact IV32. IV33 10 3V 1s. The swiches are looking stable. IV34 10 1V 1s. It doesnt switch at +-3V. IV39 10 3V 1s. Went overload in IV40. IV41 10 3V 1s. 
 
 ## 2024.03.26. Julich samples, Nth measurement - Matteo
 
