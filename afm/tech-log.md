@@ -1,7 +1,12 @@
 # AFM as Probe Station Logs
 
 ---------------------------------------------
-## 2024.03.26. Julich samples, Nth measurement - Matteo - /w AFM
+## 2024.03.27. Julich samples, Nth measurement - Matteo
+### MT1D08p20
+- Did a topography scan. (day/a.gdf). There is contact.
+
+
+## 2024.03.26. Julich samples, Nth measurement - Matteo
 
 ### MT1 G08p50
 #### Conductive AFM measurements
@@ -18,8 +23,8 @@
 
 ### MT1 F08p5 
 ### MT1 D08p5 
-I missed to upload the log for the afternoon measurements. We achieved IV's on the p5 samples, and around 2 switching ratio.
-
+I missed to upload the log for the afternoon measurements. We achieved IV's on the p5, p8 and p10 samples, and around 2 switching ratio. The HRS is around -8e-8 at -1V, and LRS is -1.5e-7 at -1V.
+Before and after the measurement there is a topology scan with AFM. The results have the expected area dependency trend.
 
 ## 2024.03.22. Julich samples, Nth measurement - Matteo - /w AFM
 ### Conductive AFM setup.
