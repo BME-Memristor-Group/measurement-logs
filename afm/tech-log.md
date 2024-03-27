@@ -7,7 +7,7 @@
 ### MT1D08p50
 - topology scan. find it in the daily folder on the AFM pc. Looks good. Contact IV32. IV33 10 3V 1s. The swiches are looking stable. IV34 10 1V 1s. It doesnt switch at +-3V. IV39 10 3V 1s. Went overload in IV40. IV41 10 3V 1s. 
 ### MT1D08p100
-- did topo on it.
+- did topo on it. IV45 10 1V 1s.
 
 ## 2024.03.26. Julich samples, Nth measurement - Matteo
 
