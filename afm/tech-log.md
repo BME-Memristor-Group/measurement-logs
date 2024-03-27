@@ -16,6 +16,9 @@
 - Did a topography measurement with AFM. IV235 stablity in HRS 10 1s 1V. IV236 -3V 1s Probably HRS and LRS are switched for us. IV247 10 1s 3V. 10 1s 1V. -1V -6e-8 HRS. Around 2 on-off ratio. -1.5e-7 is LRS. This could be achieved when doing many Pos Cycles in LRS. 10 Full 3V. HRS stay stable. Switching. LRS is stable. Changed the position on the sample. We are looking for the same data. IV282 10 Full 3V 1s. It stayed the same. It seems like after moving it is a bit relaxed to -1.2e-7 A. IV305 from HRS 3V 1s. 
 - Made a topography measurmeent on the same area. We can see the places where we made the measurements.
 
+### MT1 F08p5 
+### MT1 D08p5 
+I missed to upload the log for the afternoon measurements. We achieved IV's on the p5 samples, and around 2 switching ratio.
 
 
 ## 2024.03.22. Julich samples, Nth measurement - Matteo - /w AFM
