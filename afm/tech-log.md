@@ -1,6 +1,12 @@
 # AFM as Probe Station Logs
 
 ---------------------------------------------
+## 2024.03.28. Julich samples, Nth measurement - Matteo
+### MT1D08p50
+#### Conductive AFm and Noise setup
+- Card offset: 0.038019 mV, Agilent offset: 0.187765 mV.
+- 
+
 ## 2024.03.27. Julich samples, Nth measurement - Matteo
 ### MT1D08p20
 - Did a topography scan. (day/a.gdf). There is contact in IV3. The signal in stable. IV5 10 1V 1s.Full from IV6-9. IV24 10 3V 1s. On off ratio is around 2. Iv28 10 3V 1s. From the topography we can wee our prevous measurements on the surface, it looks like a crater. 
