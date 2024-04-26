@@ -1,7 +1,14 @@
 # Probe Station Logs
 
 ---------------------------------------------
+## 2024.04.26. Julich samples, Nth measurement - Matteo
+### MT1 F08p50
+#### IV
+- successful init. IV6, full in iv11, bad gain. at 64 we realised that the gain's offset was huge. we terrorised the sample a bit, and then it chaged the states to -2e-6A, and -6e-6 A.
 
+#### Noise
+- offset comp: card offset -0.0970116 mV, Agilent offset 0.194962 mV
+- LRS in ser01, HRS in ser02.
 ## 2024.03.20. Julich samples, Nth measurement - Matteo
 
 ### MT M03p50
