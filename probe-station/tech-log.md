@@ -1,6 +1,15 @@
 # Probe Station Logs
 
 ---------------------------------------------
+## 2024.05.03. Julich samples, Nth measurement - Matteo
+### MT1 F08p50
+#### IV 
+- successful init in IV1-4. start noise in LRS
+
+#### Noise
+- offset comp: card:  mV, agilent:  mV
+
+
 ## 2024.04.26. Julich samples, Nth measurement - Matteo
 ### MT1 F08p50
 #### IV
