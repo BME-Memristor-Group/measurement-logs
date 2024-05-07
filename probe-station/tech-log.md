@@ -7,7 +7,13 @@
 - successful init in IV1-4. start noise in LRS
 
 #### Noise
-- offset comp: card:  mV, agilent:  mV
+- offset comp: card: -0.122523 mV, agilent: -0.427412 mV
+- LRS in ser03. on the first try I missed to switch the capacitance, so I restarted the measurement. HRS in ser04.
+
+### MT1 F08p100
+#### IV 
+- IV 12-14 very strange, inverted IV. success if IV17. 3V ,0.1s in IV21. 3.2V 10 0.1s in IV22-23. LRS -2.5e-5 A at -1V. 3.2V 10 1s in IV26. HRS is -5e-6 A at -1V. Start Noise in LRS.
+
 
 
 ## 2024.04.26. Julich samples, Nth measurement - Matteo
