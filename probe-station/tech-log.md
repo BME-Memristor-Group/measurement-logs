@@ -4,7 +4,10 @@
 ## 2024.05.10. Julich samples, Nth measurement - Matteo
 ### MT1 L09p20
 #### IV
-- Firtst we conducted the p50, which was success in IV6.
+
+- First we conducted the p50, which was success in IV6.
+- Success in IV36. IV38 switch, 39-40 also. Switching stability Iv41-42 3V 1s 10.
+- HRS Stab in IV49 1V 1s 10. LRS IV44 1V 1s 10. Switching stab in IV 50-54 3V 1s 10. IV56 1e7 gain, LRS 1V 10 1s. IV58 wrong gain. IV57 switch 1. IV59 1e7 HRS 1V 10 1s.
 
 
 ## 2024.05.03. Julich samples, Nth measurement - Matteo
