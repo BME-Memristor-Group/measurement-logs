@@ -2,13 +2,14 @@
 
 ---------------------------------------------
 ## 2024.05.10. Julich samples, Nth measurement - Matteo
-### MT1 L09p20
+### MT1 E08p20
 #### IV
 
-- First we conducted the p50, which was success in IV6.
+- First we conducted the F08p50, which was success in IV6. We tried to contact F08p20 but it probably died. (very low resistance)
 - Success in IV36. IV38 switch, 39-40 also. Switching stability Iv41-42 3V 1s 10.
 - HRS Stab in IV49 1V 1s 10. LRS IV44 1V 1s 10. Switching stab in IV 50-54 3V 1s 10. IV56 1e7 gain, LRS 1V 10 1s. IV58 wrong gain. IV57 switch 1. IV59 1e7 HRS 1V 10 1s.
-
+#### Noise
+- offset comp: card: -0.0827379 mV, agilent: -0.537584 mV
 
 ## 2024.05.03. Julich samples, Nth measurement - Matteo
 ### MT1 F08p50
