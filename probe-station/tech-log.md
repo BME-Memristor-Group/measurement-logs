@@ -10,6 +10,10 @@
 - HRS Stab in IV49 1V 1s 10. LRS IV44 1V 1s 10. Switching stab in IV 50-54 3V 1s 10. IV56 1e7 gain, LRS 1V 10 1s. IV58 wrong gain. IV57 switch 1. IV59 1e7 HRS 1V 10 1s.
 #### Noise
 - offset comp: card: -0.0827379 mV, agilent: -0.537584 mV
+- HRS in ser01 
+- 5e7 gain offsets
+- card : -0.30796 mV, agilent: -0.741139 mV
+- it went overload, tried to measure LRS (ser02) with the normal gain amplifier, but the resistance levels were not correct.
 
 ## 2024.05.03. Julich samples, Nth measurement - Matteo
 ### MT1 F08p50
