@@ -1,6 +1,12 @@
 # Probe Station Logs
 
 ---------------------------------------------
+## 2024.05.10. Julich samples, Nth measurement - Matteo
+### MT1 L09p20
+#### IV
+- Firtst we conducted the p50, which was success in IV6.
+
+
 ## 2024.05.03. Julich samples, Nth measurement - Matteo
 ### MT1 F08p50
 #### IV 
@@ -128,7 +134,8 @@ All was successful. N03p100 was weird, and the results on P03p100 was also weird
 
 #### IV
 
-- Success conduct. (IV4). Stability in HRS IV18. IV 16-17 RESET-ing. After measuring it with neg voltage many times, the Normal measurements(1V, 1s, full) bottom left (2.5e-5 A) has rised to a more stable state. LRS is -2.5e-5 A. Hrs's lowest state is (what i could achieve) -8e-6 A. Full cycle is stable, starting the noise in LRS. The on off ratio is roughy 2-2.5-3. IV27-33.
+-// Success conduct. (IV4). Stability in HRS IV18. IV 16-17 RESET-ing. After measuring it with neg voltage many times, the Normal measurements(1V, 1s, full) bottom left (2.5e-5 A) has rised to a more stable state. LRS is -2.5e-5 A. Hrs's lowest state is (what i could achieve) -8e-6 A. Full cycle is stable, starting the noise in LRS. The on off ratio is roughy 2-2.5-3. IV27-33.// NOT TRUE
+- IV25-55. around 10 switch.
 
 #### Noise
 
