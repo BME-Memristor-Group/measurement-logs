@@ -78,6 +78,7 @@
 
 #### IV measurements
 
+- NOTE: Femto offset was bad!!!
 - the plan is to make stabilty measurements on the sample. Starting with around 30-40. FULL IV.
 - IV14 Contact. IV19 stab in LRS. 6e-6 is with 1V, 1s. Probably killed N03p50 with 5V. Switching
 
@@ -85,6 +86,7 @@
 
 #### IV measurements
 
+- NOTE: Femto offset was bad!!!
 - IV 43 contact, Full. Switch stab in IV58, LRS IV59, HRS IV61. -1,5e-6 A is HRS, LRS is -5e-6 A. 30 Full in IV64. Switching to noise
 
 #### Noise
@@ -133,6 +135,7 @@ All was successful. N03p100 was weird, and the results on P03p100 was also weird
 #### IV
 
 - LRS -8e-7 A,  HRS = -4 e-7 A., on/off is roughly 2.
+- IV35-55. around 10 switch.
 
 #### Noise
 
@@ -142,8 +145,8 @@ All was successful. N03p100 was weird, and the results on P03p100 was also weird
 
 #### IV
 
--// Success conduct. (IV4). Stability in HRS IV18. IV 16-17 RESET-ing. After measuring it with neg voltage many times, the Normal measurements(1V, 1s, full) bottom left (2.5e-5 A) has rised to a more stable state. LRS is -2.5e-5 A. Hrs's lowest state is (what i could achieve) -8e-6 A. Full cycle is stable, starting the noise in LRS. The on off ratio is roughy 2-2.5-3. IV27-33.// NOT TRUE
-- IV25-55. around 10 switch.
+- NOT TRUE // Success conduct. (IV4). Stability in HRS IV18. IV 16-17 RESET-ing. After measuring it with neg voltage many times, the Normal measurements(1V, 1s, full) bottom left (2.5e-5 A) has rised to a more stable state. LRS is -2.5e-5 A. Hrs's lowest state is (what i could achieve) -8e-6 A. Full cycle is stable, starting the noise in LRS. The on off ratio is roughy 2-2.5-3. IV27-33.//
+
 
 #### Noise
 
