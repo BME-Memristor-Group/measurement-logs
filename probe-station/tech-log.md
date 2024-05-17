@@ -51,7 +51,7 @@
 
 ## 2024.03.19. Julich samples, Nth measurement - Matteo
 
-### MT M03p50 again
+### MT1M03p50 again
 
 #### Noise again
 
@@ -61,7 +61,7 @@
 
 ## 2024.03.18. Julich samples, Nth measurement - Matteo
 
-### MT M03p50
+### MT1M03p50
 
 #### IV
 
@@ -74,7 +74,7 @@
 
 ## 2024.03.14. Julich samples, Nth measurement - Matteo
 
-### MT1 N03p50
+### MT1N03p50
 
 #### IV measurements
 
@@ -184,11 +184,11 @@ All was successful. N03p100 was weird, and the results on P03p100 was also weird
 
 ## 2024.02.29. Julich samples, Nth measurement - Matteo
 
-### MT1
+###MT1
 
 - Test IV on 100s.
 
-### K08p100
+### MT1K08p100
 
 - IV_02 successfull contacting. LRS = -8E-9, HRS = -4E-9, On/Off Ratio = rouhgly 2, Switching voltage = +-3V, 1s. Stable. Stability check from IV19-23.
 - Switching to noise setup.
@@ -203,53 +203,53 @@ All was successful. N03p100 was weird, and the results on P03p100 was also weird
 
 ## 2024.02.07. Julich samples, Nth measurement - Matteo
 
-### MT1
+###MT1
 
 - calib. card : -0.0707422 mV,  agilent offset : -0.0608005 mV
 
-### K08p50
+### MT1K08p50
 
 - Starting to measure K08p50. couldnt contact. Going back to it after consulting with Zoltan, had the contact and starting measuring it. LRS, HRS is 2e-6A, 4e-6 A, the same around 2 ratio like the previouses. LRS is in (ser01), HRS is in (ser02).
 - Done fitting for all the prev measurements. L10p50ser01 fitting is bad really, need to check it with Zoli.
 
 ## 2024.02.06. Julich samples, Nth measurement - Matteo
 
-### MT1
+###MT1
 
 - card -0.0967912 mV, agilent is essentially 0.
 
-### L09p50
+### MT1L09p50
 
 - Accidentally, I did the first measurements with open cab, and lights on. DELETED it.
 - Had some very strange noise measurements. LRS is in (ser02)
 - HRS is around 4e-6A, LRS is around 8e-6 A. After noise HRS/LRS moved to 3e-6, 4e-6 A. Moving to another 50 sample.
 
-### L10p50
+### MT1L10p50
 
 - L10p50 LRS state is 4e-6 A, HRS is 2e-6 A. Ratio is around 2., did the hrs and lrs noise measurement. The eval comparing to the others is left.
 - HRS is in (ser01), LRS is in (ser02)
 
 ## 2024.02.05. Julich samples, Nth measurement - Matteo
 
-### MT1
+###MT1
 
 - Card Offset : -0.045904 Mv, Agilent Offset : 0.13 mV
 - the plan is to search for contact on a 20 and 100 sample ({\mu }m)
 - Just found out that the norma setup's cable is sending the same voltage after the measurement has stopped.c
 
-### L08p100
+### MT1L08p100
 
 - Couldn't contact 20, L08p100 is successfully contacted. 460 resistance, (sweep 0.5V, 0.1s Min: -8*e-4 A, Max: 1e-3 A)
 - base measurement(5 sweep) is looking stable
 - switching on pos 0.5V (RESET), HRS state is -3.5e-5 A Min (0.5V, 0.1s) IV_26
 
-### L09p100
+### MT1L09p100
 
 - probably killed the sample with -1.5V. Go to L09p100. Contact success. IV37. Base 5 looking stable, -1.5e-5 A on 0.5V sweep, RESET on 1.5V pos, -2.5e-5 A on min, stable
 - SET on -2V.
 - after some steps it went out from e-5 A to e-6 A. IV68 Going to a "known" 50 {\mu}m. L09p50 conduct success IV79
 
-### L09p50
+### MT1L09p50
 
 - +3V is RESET, -3V is SET, 1s, Base state is SET which is HRS. HRS is -2.25e-6 A - -2.7e-6 A min. LRS is -4e-6 A - (-5e-6 A). The HRS/LRS is around 2. Both state look stable.
 - Setting up the noise measurement. The agilent has a lower step of 0.5 mV, and a 0.10-0.15mV minimum agilent error. It's okay if you measure it back.
@@ -273,7 +273,7 @@ Noise:
 
 Start with MT1, test IV.
 
-### L06p50
+### MT1L06p50
 
 #### IV
 
@@ -290,7 +290,7 @@ After changing gain, we measured no contact. Anomaly accoured, no contact on the
 TBC. 5hr passed.
 Continuing measurement on MT1L06p50. Anomaly solved by experiencing that the chairs in the new lab are charging us. The sample died in ESD.
 
-### L07p50
+### MT1L07p50
 
 #### Noise
 
@@ -305,7 +305,7 @@ First noise measurement in LRS (ser01), then continous IVs (in LRS/HRS and reset
 Chipek elnevezése MT1; MT1p5; MT2, rendre 1nm, 1.5nm és 2nm vastagságú rétegeket jelölik
 Measuring MT1p5.
 
-### H06p100
+### MT1p5H06p100
 
 #### IV
 
