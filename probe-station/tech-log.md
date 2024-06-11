@@ -1,6 +1,14 @@
 # Probe Station Logs
 
 ---------------------------------------------
+
+## 2024.06.11. Julich samples, Nth measurement - Matteo
+### MT1 R07p100 ZERO
+#### Noise
+- Card : -0.0377396 mV, Agilent : -0.753615 mV
+- Did 2 IV measuerments, one with filter on, the other is strange, too linear. ZERO in ser01, LRS in ser02. In ser02 the SET after the noise and iv was in wrong gain (should be 1e3, and it was 1e5), and in the wrong direction. Corrected it with RESET after it.
+
+
 ## 2024.05.10. Julich samples, Nth measurement - Matteo
 ### MT1 E08p20
 #### IV
