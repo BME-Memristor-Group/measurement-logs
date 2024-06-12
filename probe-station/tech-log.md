@@ -5,7 +5,7 @@
 ### MT1 R08p100 
 #### Noise
 - Card :-0.0133432 mV, Agilent : -1.12603 mV
-
+- ser07 first reset wrong gain (1e5 instead of 1e3), and it is HRS. ser08 is LRS, ser09 is HRS.
 
 
 
@@ -13,7 +13,7 @@
 ### MT1 R07p100 ZERO
 #### Noise
 - Card : -0.0377396 mV, Agilent : -0.753615 mV
-- Did 2 IV measuerments, one with filter on, the other is strange, too linear. ZERO in ser01, LRS in ser02. In ser02 the SET after the noise and iv was in wrong gain (should be 1e3, and it was 1e5), and in the wrong direction. Corrected it with RESET after it.
+- Did 2 IV measuerments, one with filter on, the other is strange, too linear. ZERO in ser01, LRS in ser02. In ser02 the SET after the noise and iv was in wrong gain (should be 1e3, and it was 1e5), and in the wrong direction. Corrected it with RESET after it. ser03, ser05 HRS, ser04, ser06 LRS.
 
 
 ## 2024.05.10. Julich samples, Nth measurement - Matteo
