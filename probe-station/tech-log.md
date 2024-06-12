@@ -5,7 +5,7 @@
 ### MT1 R08p100 
 #### Noise
 - Card :-0.0133432 mV, Agilent : -1.12603 mV
-- ser07 first reset wrong gain (1e5 instead of 1e3), and it is HRS. ser08 is LRS, ser09 is HRS.
+- ser07 first reset wrong gain (1e5 instead of 1e3), and it is HRS. ser08 is LRS, ser09 is HRS. ser 10 LRS, ser 11 is HRS.
 
 
 
