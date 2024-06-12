@@ -1,6 +1,13 @@
 # Probe Station Logs
 
 ---------------------------------------------
+## 2024.06.12. Julich samples, Nth measurement - Matteo
+### MT1 R08p100 
+#### Noise
+- Card :-0.0133432 mV, Agilent : -1.12603 mV
+
+
+
 
 ## 2024.06.11. Julich samples, Nth measurement - Matteo
 ### MT1 R07p100 ZERO
