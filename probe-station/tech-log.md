@@ -2,9 +2,13 @@
 
 ---------------------------------------------
 
-## 2024.06.12. Julich samples, Nth measurement - Matteo
-### Noise setup
- - Card : -0.0230618 mV, Agilent : -0.422 mV
+## 2024.07.04. Julich samples, Nth measurement - Matteo
+### MT1 D04p50 ZERO
+#### Noise setup
+- Card : -0.0230618 mV, Agilent : -0.422 mV
+- Contact is successful. ser01 is HRS. 80 Hz spike in noise. ser02,ser04, ser06, ser08, ser10, ser12 are LRS, ser03,ser05, ser07, ser09, ser11 are HRS.
+- Did a RESET in ser07 instead of SET. started to do Noise in the same state.
+
 
 
 ## 2024.06.12. Julich samples, Nth measurement - Matteo, Akos
@@ -16,6 +20,8 @@
 Akos
 - ser12 first set went to overload
 - ser13 bit of a problem with the program, fixed it, then forgot the first IV measurement, first IV measurement with filter did it with no filter after
+
+appendix. ser14,ser16 LRS, ser15, ser17 HRS
 
 
 
