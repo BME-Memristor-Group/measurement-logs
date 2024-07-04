@@ -8,7 +8,7 @@
 
 
 ## 2024.06.12. Julich samples, Nth measurement - Matteo, Akos
-### MT1 R07p100 
+### MT1 R07p100 ZERO cont.
 #### Noise
 - Card :-0.0133432 mV, Agilent : -1.12603 mV
 - ser07 first reset wrong gain (1e5 instead of 1e3), and it is HRS. ser08 is LRS, ser09 is HRS. ser 10 LRS, ser 11 is HRS.
