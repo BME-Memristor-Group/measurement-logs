@@ -2,6 +2,13 @@
 
 ---------------------------------------------
 
+## 2024.07.05. Julich samples, Nth measurement - Matteo
+### MT1 D04p50 cont.
+#### Noise setup
+- Card: -0.0241448 mV, Agilent: -0.587487 mV
+- ser13,15,17,19 HRS, ser14,16,18,20 LRS, ser18 RESET wrong gain 1e6 instead of 1e3. Did ser20 without filter.
+
+
 ## 2024.07.04. Julich samples, Nth measurement - Matteo
 ### MT1 D04p50 ZERO
 #### Noise setup
