@@ -1,12 +1,24 @@
 # Probe Station Logs
 
 ---------------------------------------------
+## 2024.07.08. Julich samples, Nth measurement - Matteo
+### MT1 D04p50 cont.
+#### Noise
+- Card: -0.0635393 mV, Agilent: -0.938564 mV
+- With the first contact test, I see that the resistance is again -4e-6 A at -1V, which means that the previous (last measurement ended in HRS, which would be -2e-6A at -1V) state is not hold.
+- Comparing the today's LRS(ser25) results and last time LRS(ser23) results, it seems that the state is not stable.
+- Do 5Full in ser25. LRS state changed to -10e-6 A @ -1 V and noise is the same.
+- In ser26 trying to get back to "normal" state of LRS. Hrs  is also bad: -6e-6A @ -1V
+- -15e-6A @ -1V is the resistance of LRS rn, doing noise test in ser27. After noise test the resistance went back to -10e-6 @ -1V.
+- 
 
 ## 2024.07.05. Julich samples, Nth measurement - Matteo
 ### MT1 D04p50 cont.
 #### Noise setup
 - Card: -0.0241448 mV, Agilent: -0.587487 mV
 - ser13,15,17,19 HRS, ser14,16,18,20 LRS, ser18 RESET wrong gain 1e6 instead of 1e3. Did ser20 without filter.
+- ser21,23 is LRS. ser 22,24 is HRS.
+- after ser 20 5FULL was conducted. 10FULL after 22.
 
 
 ## 2024.07.04. Julich samples, Nth measurement - Matteo
