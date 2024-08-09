@@ -1,6 +1,16 @@
 # Probe Station Logs
 
 ---------------------------------------------
+## 2024.08.09. Julich sample JS2, PCMO 2nm - Matteo
+### JS2 A05p50
+- summary: it switches slightly at relatively low voltage (500mV), there's very little noise at the beginning, it changes due to switching and starts to increase, the resistance also changes slightly
+- ser01 - noise measurement in zero state (twice) LRS 500mV noises, RESET HRS 500mV noises with SET at the end, there might have been 30 full IVs in between, the noise was quite low, almost immeasurable in the first measurement, barely evaluable afterwards
+- ser02 - another "zero" noise measurement after 30 Full IVs, the noise increased and fell into a quite reasonable place
+- ser03 - Nonlinear noise testing in LRS in the negative direction, experience shows that it switches already at 500-600mV when sweeping towards -1V, so these plateaus are not evaluable (slow change should be compensated) Other plateaus are meaningful though
+The length of the plateaus was chosen to fit one PSD per plateau, i.e., 600ms, with 50/10ms cut at the beginning/end, PSD interval 500ms
+- ser04 - IV noise with 2 different IV amplitudes (250mV, 500mV, 1V) each with 10 plateaus and 600ms plateau length. PSDs generated but not fitted
+- ser05 - another "zero" measurement, observation: resistance went down, and noise increased. It starts to switch on at -1V, so the HRS is not a completely real HRS
+
 ## 2024.07.08. Julich samples, Nth measurement - Matteo
 ### MT1 D04p50 cont.
 #### Noise
