@@ -1,6 +1,9 @@
 # Probe Station Logs
-
+ 
 ---------------------------------------------
+## 2024.08.13. Julich sample JS2, PCMO 2nm - Matteo
+### Noise
+- Card: -0.0255318 mV, Agilent: -0.802785 mV
 ## 2024.08.09. Julich sample JS2, PCMO 2nm - Matteo
 ### JS2 A05p50
 - summary: it switches slightly at relatively low voltage (500mV), there's very little noise at the beginning, it changes due to switching and starts to increase, the resistance also changes slightly
