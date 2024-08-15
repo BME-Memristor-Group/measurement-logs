@@ -1,12 +1,22 @@
 # Probe Station Logs
  
 ---------------------------------------------
+## 2024.08.15. Julich sample, Felix FT1, Titan - Akos, Matteo
+### Noise
+- Card: -0.0281676 mV, Agilent: -0.835195 mV
+### FT1
+- 80x80 R1B5 succesfully contacted
+- IV12-38 doing measurements (0.5V,1V,1.5V,2V, the tried to set, first set went to overload, second was succesfull then device died at IV41) then break
 ## 2024.08.13. Julich sample JS2, PCMO 2nm - Matteo
 ### Noise
 - Card: -0.0255318 mV, Agilent: -0.802785 mV
+### MT1 C09p50 ZERO
+- started with HRS in smart mode. after fitting ser01, the noise is low.
+
+
 ## 2024.08.09. Julich sample JS2, PCMO 2nm - Matteo
 ### JS2 A05p50
-- summary: it switches slightly at relatively low voltage (500mV), there's very little noise at the beginning, it changes due to switching and starts to increase, the resistance also changes slightly
+- summary: it switches slightly at relatively low voltage (500mV), there's little noise at the beginning, it changes due to switching and starts to increase, the resistance also changes slightly
 - ser01 - noise measurement in zero state (twice) LRS 500mV noises, RESET HRS 500mV noises with SET at the end, there might have been 30 full IVs in between, the noise was quite low, almost immeasurable in the first measurement, barely evaluable afterwards
 - ser02 - another "zero" noise measurement after 30 Full IVs, the noise increased and fell into a quite reasonable place
 - ser03 - Nonlinear noise testing in LRS in the negative direction, experience shows that it switches already at 500-600mV when sweeping towards -1V, so these plateaus are not evaluable (slow change should be compensated) Other plateaus are meaningful though
